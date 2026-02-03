@@ -4,28 +4,9 @@ export const getQuickStartContent = (isKorean: boolean): { title: string; conten
   title: isKorean ? "빠른 시작" : "Quick Start",
   content: (
     <div className="space-y-8">
-      <div className="w-full">
-        <div className="relative w-full aspect-[16/9] overflow-hidden">
-          <video
-            className="w-full h-full object-contain"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            {/* @ts-ignore */}
-            {/* @ts-ignore */}
-            <source src={"https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Fast%20Start%20-kt2UXqPFiksXNbzyyjka81Jx2xRFuj.webm"} type="video/webm" />
-          </video>
-        </div>
-      </div>
-
       <div className="space-y-6">
         <div>
-          <h3 className="text-xl font-semibold mb-4">
-            {isKorean ? "젠프레소 시작하기" : "Getting Started with GenPresso"}
-          </h3>
+          <h3 className="text-xl font-semibold mb-4">{isKorean ? "젠프레소 시작하기" : "Getting Started with GenPresso"}</h3>
           <div className="bg-blue-50 dark:bg-blue-950/20 border-l-4 border-blue-500 rounded-r-lg p-4 mb-6">
             <p className="text-base text-blue-900 dark:text-blue-200 leading-relaxed">
               {isKorean
@@ -74,26 +55,29 @@ export const getQuickStartContent = (isKorean: boolean): { title: string; conten
         </div>
       </div>
 
-      <div className="space-y-4">
-        <h3 className="text-xl font-semibold mb-4">
-          {isKorean ? "튜토리얼 다시보기" : "Watch Tutorial Again"}
-        </h3>
+      <div className="space-y-4 not-prose">
+        <div className="w-full aspect-video overflow-hidden rounded-lg border border-border bg-black">
+          {/* @ts-ignore */}
+          <video key="quick-start-fast-start" className="w-full h-full object-contain" autoPlay loop muted playsInline>
+            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Fast%20Start%20-rdtPIccgaSlQcmxuMiX2vpruzb1ybo.webm" type="video/webm" />
+            {isKorean ? "브라우저가 비디오를 지원하지 않습니다." : "Your browser does not support the video tag."}
+          </video>
+        </div>
+      </div>
+
+      <div className="space-y-4 not-prose">
+        <h3 className="text-xl font-semibold">{isKorean ? "튜토리얼 다시보기" : "Watch Tutorial Again"}</h3>
         <p className="text-base text-muted-foreground leading-relaxed">
-          {isKorean 
+          {isKorean
             ? "캔버스의 우측 하단 ? 버튼에서 튜토리얼 재시작을 선택하면 다시 볼 수 있습니다."
             : "You can watch the tutorial again by selecting 'Restart Tutorial' from the (?) button in the bottom right corner of the canvas."}
         </p>
-        <div className="w-full aspect-[16/9] overflow-hidden rounded-lg">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/ZigMUSU72J8?autoplay=0&mute=1"
-            title="GenPresso Tutorial"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="w-full h-full"
-          />
+        <div className="w-full aspect-video overflow-hidden rounded-lg border border-border bg-black">
+          {/* @ts-ignore */}
+          <video key="quick-start-tutorial" className="w-full h-full object-contain" autoPlay loop muted playsInline>
+            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tutorial-l9iHjZtgOQqkmqawcOBGxhyuf8RlC8.webm" type="video/webm" />
+            {isKorean ? "브라우저가 비디오를 지원하지 않습니다." : "Your browser does not support the video tag."}
+          </video>
         </div>
       </div>
     </div>

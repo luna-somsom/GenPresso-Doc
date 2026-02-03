@@ -7,14 +7,14 @@ export const getAgentTipsContent = (isKorean: boolean): { title: string; content
       <div>
         <p className="text-lg text-muted-foreground leading-relaxed mb-8">
           {isKorean
-            ? "에이전트를 효과적으로 활용하기 위한 다양한 팁과 노하우를 공유합니다."
-            : "We share various tips and know-how for effective use of agents."}
+            ? "에이전트를 효과적으로 활용하기 위한 다양한 팁과 노하우를 공유합니다. ✨"
+            : "We share various tips and know-how for effective use of agents. ✨"}
         </p>
       </div>
 
       <div className="flex flex-col items-center justify-center py-16 px-6 border border-dashed border-purple-300 dark:border-purple-700 rounded-2xl bg-gradient-to-br from-purple-50/50 to-violet-50/50 dark:from-purple-950/20 dark:to-violet-950/20">
         <img 
-          src={"https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E1%84%8B%E1%85%A1%E1%87%81%20%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%A1%E1%84%87%E1%85%A9%E1%86%AB-4pOcLYtF41nFkgZd4ygPXl4vI4meRj.png"}
+          src={"/character.png"}
           alt="Coming soon"
           className="w-32 h-32 mb-6 object-contain"
         />
