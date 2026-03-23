@@ -14,7 +14,7 @@ export const getFAQContent = (isKorean: boolean): { title: string; content: JSX.
 
       <div className="flex flex-col items-center justify-center py-16 px-6 border border-dashed border-purple-300 dark:border-purple-700 rounded-2xl bg-gradient-to-br from-purple-50/50 to-violet-50/50 dark:from-purple-950/20 dark:to-violet-950/20">
         <img 
-          src={"/images/e1-84-8b-e1-85-a1-e1-87-81-20-e1-84-87-e1-85-a9-e1-86-a8-e1-84-89-e1-85-a1-e1-84-87-e1-85-a9-e1-86-ab.png"}
+          src={"/character.png"}
           alt="Coming soon"
           className="w-32 h-32 mb-6 object-contain"
         />
