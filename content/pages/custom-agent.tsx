@@ -27,13 +27,22 @@ export const customAgentContentKo = (
         </video>
       </div>
 
-      <div className="space-y-4 pt-6 border-t border-border">
-        <h2 className="text-2xl font-semibold">커스텀 에이전트 예시 - 구름 타이포그래피 에이전트</h2>
-        <div className="bg-blue-50 dark:bg-blue-950/20 border-l-4 border-blue-500 rounded-r-lg p-4">
-          <p className="text-base text-blue-900 dark:text-blue-200 leading-relaxed">
-            구름 타이포그래피 에이전트는 구름의 형태와 질감을 활용해 알파벳 글자를 시각적으로 만들어내는 에이전트입니다. 글자의 형태·밀도·흐름을 조절해 다양한 분위기의 구름 알파벳 타이포그래피를 생성합니다.
-          </p>
-        </div>
+      <div className="space-y-6 pt-8 border-t border-border">
+        <h2 className="text-2xl font-semibold">커스텀 에이전트 예시</h2>
+        
+        {/* Cloud Typography Agent */}
+        <div className="space-y-4 p-6 rounded-2xl border border-border bg-card">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-400 to-blue-500 flex items-center justify-center text-white text-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+            </div>
+            <h3 className="text-xl font-semibold">구름 타이포그래피 에이전트</h3>
+          </div>
+          <div className="bg-blue-50 dark:bg-blue-950/20 border-l-4 border-blue-500 rounded-r-lg p-4">
+            <p className="text-base text-blue-900 dark:text-blue-200 leading-relaxed">
+              구름 타이포그래피 에이전트는 구름의 형태와 질감을 활용해 알파벳 글자를 시각적으로 만들어내는 에이전트입니다. 글자의 형태, 밀도, 흐름을 조절해 다양한 분위기의 구름 알파벳 타이포그래피를 생성합니다.
+            </p>
+          </div>
         <div className="grid grid-cols-1 gap-4">
           <div className="flex flex-col items-center">
             <div className="w-full rounded-lg border border-border overflow-hidden">
@@ -75,6 +84,7 @@ export const customAgentContentKo = (
               </p>
             </div>
           </div>
+        </div>
         </div>
       </div>
 
@@ -164,13 +174,22 @@ export const customAgentContentEn = (
         </video>
       </div>
 
-      <div className="space-y-4 pt-6 border-t border-border">
-        <h2 className="text-2xl font-semibold">Custom Agent Examples - Cloud Typography Agent</h2>
-        <div className="bg-blue-50 dark:bg-blue-950/20 border-l-4 border-blue-500 rounded-r-lg p-4">
-          <p className="text-base text-blue-900 dark:text-blue-200 leading-relaxed">
-            The Cloud Typography Agent is an agent that visually creates alphabet letters using cloud shapes and textures. It generates cloud alphabet typography with various atmospheres by adjusting letter shape, density, and flow.
-          </p>
-        </div>
+      <div className="space-y-6 pt-8 border-t border-border">
+        <h2 className="text-2xl font-semibold">Custom Agent Examples</h2>
+        
+        {/* Cloud Typography Agent */}
+        <div className="space-y-4 p-6 rounded-2xl border border-border bg-card">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-400 to-blue-500 flex items-center justify-center text-white text-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+            </div>
+            <h3 className="text-xl font-semibold">Cloud Typography Agent</h3>
+          </div>
+          <div className="bg-blue-50 dark:bg-blue-950/20 border-l-4 border-blue-500 rounded-r-lg p-4">
+            <p className="text-base text-blue-900 dark:text-blue-200 leading-relaxed">
+              The Cloud Typography Agent is an agent that visually creates alphabet letters using cloud shapes and textures. It generates cloud alphabet typography with various atmospheres by adjusting letter shape, density, and flow.
+            </p>
+          </div>
         <div className="grid grid-cols-1 gap-4">
           <div className="flex flex-col items-center">
             <div className="w-full rounded-lg border border-border overflow-hidden">
@@ -212,6 +231,7 @@ export const customAgentContentEn = (
               </p>
             </div>
           </div>
+        </div>
         </div>
       </div>
 
