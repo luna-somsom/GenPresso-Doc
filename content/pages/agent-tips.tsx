@@ -238,7 +238,7 @@ export const getAgentTipsContent = (isKorean: boolean): { title: string; content
             </div>
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-2">
-                <h3 className="font-bold text-lg bg-gradient-to-r from-amber-600 to-orange-600 dark:from-amber-400 dark:to-orange-400 bg-clip-text text-transparent">Pro Tip</h3>
+                <h3 className="font-bold text-lg bg-gradient-to-r from-amber-600 to-orange-600 dark:from-amber-400 dark:to-orange-400 bg-clip-text text-transparent">{isKorean ? "Tip, 에이전트를 활용하세요" : "Tip, Use the Agent"}</h3>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 {isKorean 
