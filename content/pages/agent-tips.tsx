@@ -1,7 +1,7 @@
 import type { JSX } from "react"
 
 export const getAgentTipsContent = (isKorean: boolean): { title: string; content: JSX.Element } => ({
-  title: isKorean ? "에이전트 작업 Tip" : "Agent Work Tips",
+  title: isKorean ? "커스텀 에이전트 Tip" : "Custom Agent Tips",
   content: (
     <div className="space-y-12">
       {/* Header */}

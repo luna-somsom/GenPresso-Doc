@@ -24,7 +24,7 @@ const translations = {
     agenticAI: "에이전트와 작업하기",
     agentTemplate: "에이전트 템플릿",
     customAgent: "사용자 커스텀 에이전트",
-    agentTips: "에이전트 작업 Tip",
+    agentTips: "커스텀 에이전트 Tip",
     node: "노드",
     nodeText: "텍스트",
     nodeImage: "이미지",
@@ -65,7 +65,7 @@ const translations = {
     agenticAI: "Working with Agents",
     agentTemplate: "Agent Template",
     customAgent: "Custom Agent",
-    agentTips: "Agent Work Tips",
+    agentTips: "Custom Agent Tips",
     node: "Node",
     nodeText: "Text",
     nodeImage: "Image",
@@ -123,9 +123,9 @@ const getNavigation = (lang: Language): NavItem[] => {
           title: t.agenticAI,
           href: "agentic_ai",
           items: [
-            { title: t.agentTips, href: "agent_tips" },
             { title: t.agentTemplate, href: "agent_template" },
             { title: t.customAgent, href: "custom_agent" },
+            { title: t.agentTips, href: "agent_tips" },
           ],
         },
         {
