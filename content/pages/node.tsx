@@ -12,7 +12,7 @@ export const getNodeContent = (isKorean: boolean): { title: string; content: JSX
 
       <div className="w-full rounded-lg overflow-hidden">
         <img
-          src="/images/canvas-workflow.png"
+          src="/images/canvas-workflow-new.png"
           alt={isKorean ? "캔버스 워크플로우 화면" : "Canvas workflow screen"}
           className="w-full h-auto"
         />
