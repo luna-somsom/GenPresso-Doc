@@ -153,8 +153,8 @@ const getNavigation = (lang: Language): NavItem[] => {
           ],
         },
         { title: t.gallery, href: "gallery" },
-        { title: t.projectManagement, href: "project_management" },
         { title: t.settings, href: "settings" },
+        { title: t.projectManagement, href: "project_management" },
       ],
     },
     {
