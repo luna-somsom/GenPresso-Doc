@@ -20,6 +20,20 @@ export const getProjectManagementContent = (isKorean: boolean): { title: string;
         />
       </div>
 
+      {/* Description */}
+      <div className="space-y-2 text-muted-foreground leading-relaxed">
+        <p>
+          {isKorean
+            ? "워크스페이스를 생성한 뒤 멤버를 초대하면, 팀 또는 회사 단위로 전용 작업 공간을 구성할 수 있습니다."
+            : "After creating a workspace and inviting members, you can set up dedicated work areas for your team or company."}
+        </p>
+        <p>
+          {isKorean
+            ? "권한 관리, 협업, 크레딧 분배 등 조직 단위 운영이 가능합니다."
+            : "You can manage permissions, collaborate, and distribute credits at the organizational level."}
+        </p>
+      </div>
+
       {/* Contact Section */}
       <div className="w-full p-5 rounded-xl bg-muted/50 border border-border flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-base font-medium text-foreground">
@@ -31,7 +45,7 @@ export const getProjectManagementContent = (isKorean: boolean): { title: string;
           href="https://tally.so/r/A7r82D"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-sm font-medium hover:opacity-90 transition-opacity whitespace-nowrap"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#0066FF] text-white text-sm font-medium hover:bg-[#0052CC] transition-colors whitespace-nowrap"
         >
           {isKorean ? "문의하기" : "Contact Us"}
         </a>
