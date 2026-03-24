@@ -31,12 +31,12 @@ export const getModelListContent = (isKorean: boolean): { title: string; content
               </div>
             </div>
             <div className="px-2.5 py-1 rounded-full bg-rose-500/10 border border-rose-500/20">
-              <span className="text-xs font-medium text-rose-600 dark:text-rose-400">7 models</span>
+              <span className="text-xs font-medium text-rose-600 dark:text-rose-400">8 models</span>
             </div>
           </div>
           <div className="p-4">
             <div className="flex flex-wrap gap-2">
-              {["NANOBANANA Pro", "NANOBANANA", "SEEDREAM 4.5", "Flux2 Flex", "Flux2 Pro", "z-image", "kling o1"].map((model, i) => (
+              {["NANOBANANA Pro", "NANOBANANA 2", "NANOBANANA", "SEEDREAM 4.5", "Flux2 Flex", "Flux2 Pro", "z-image", "kling o1"].map((model, i) => (
                 <div key={i} className="group px-3 py-2 rounded-lg border border-border bg-background hover:border-rose-500/50 hover:bg-rose-500/5 transition-all duration-200 cursor-default">
                   <div className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-rose-500 group-hover:animate-pulse" />
