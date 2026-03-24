@@ -45,7 +45,7 @@ export const getProjectManagementContent = (isKorean: boolean): { title: string;
           href="https://tally.so/r/A7r82D"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#0066FF] text-white text-sm font-medium hover:bg-[#0052CC] transition-colors whitespace-nowrap"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#4FA8D8] text-white text-sm font-medium hover:bg-[#3D8BB8] transition-colors whitespace-nowrap"
         >
           {isKorean ? "문의하기" : "Contact Us"}
         </a>
