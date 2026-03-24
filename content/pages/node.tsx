@@ -12,7 +12,7 @@ export const getNodeContent = (isKorean: boolean): { title: string; content: JSX
 
       <div className="w-full rounded-lg overflow-hidden">
         <img
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E1%84%8F%E1%85%A2%E1%86%AB%E1%84%87%E1%85%A4%E1%84%89%E1%85%B3%20%E1%84%8B%E1%85%AF%E1%84%8F%E1%85%B3%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%8B%E1%85%AE%20%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB%201-0IfUIazh6s1DVxXfMm2mp9xpFXonW9.png"
+          src="/images/canvas-workflow-new.png"
           alt={isKorean ? "캔버스 워크플로우 화면" : "Canvas workflow screen"}
           className="w-full h-auto"
         />
@@ -59,7 +59,7 @@ export const getNodeContent = (isKorean: boolean): { title: string; content: JSX
         
         <div className="rounded-lg overflow-hidden border border-border">
           <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E1%84%82%E1%85%A9%E1%84%83%E1%85%B3%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%84%8C%E1%85%A9-W1fXExOPkMgTdnGOjvfMvxJg15cdmL.png"
+            src="/images/node-basic-structure.png"
             alt={isKorean ? "노드 기본 구조" : "Node Basic Structure"}
             className="w-full h-auto"
           />
@@ -175,8 +175,7 @@ export const getNodeContent = (isKorean: boolean): { title: string; content: JSX
             muted
             playsInline
           >
-            {/* @ts-ignore */}
-            <source src={"https://hebbkx1anhila5yf.public.blob.vercel-storage.com/create%20node-vPKHnRMA6KYsiYL7KInJPyY2DTdHqZ.webm"} type="video/webm" />
+            <source src="/images/create-node.webm" type="video/webm" />
           </video>
         </div>
       </div>

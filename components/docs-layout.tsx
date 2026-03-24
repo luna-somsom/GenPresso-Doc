@@ -41,6 +41,7 @@ const translations = {
     inpainting: "인페인팅",
     gallery: "갤러리",
     uploadFile: "업로드파일",
+    preferences: "환경설정",
     projectManagement: "워크스페이스 관리",
     settings: "설정",
     outputFormat: "결과물 형식",
@@ -82,6 +83,7 @@ const translations = {
     inpainting: "Inpainting",
     gallery: "Gallery",
     uploadFile: "Upload File",
+    preferences: "Preferences",
     projectManagement: "Workspace Management",
     settings: "Settings",
     outputFormat: "Output Format",
@@ -153,8 +155,14 @@ const getNavigation = (lang: Language): NavItem[] => {
           ],
         },
         { title: t.gallery, href: "gallery" },
-        { title: t.projectManagement, href: "project_management" },
+      ],
+    },
+    {
+      title: t.preferences,
+      href: "preferences",
+      items: [
         { title: t.settings, href: "settings" },
+        { title: t.projectManagement, href: "project_management" },
       ],
     },
     {

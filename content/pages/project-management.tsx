@@ -4,28 +4,51 @@ export const getProjectManagementContent = (isKorean: boolean): { title: string;
   title: isKorean ? "워크스페이스 관리" : "Workspace Management",
   content: (
     <div className="space-y-8">
-      <div>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+      {/* Description */}
+      <p className="text-lg text-muted-foreground leading-relaxed">
+        {isKorean
+          ? "워크스페이스를 생성하고 멤버를 초대해 팀 전용 작업 공간을 구성하세요."
+          : "Create workspaces and invite members to set up dedicated team work areas."}
+      </p>
+
+      {/* Image */}
+      <div className="w-full rounded-xl overflow-hidden border border-border">
+        <img
+          src="/images/workspace-management.png"
+          alt={isKorean ? "워크스페이스 관리 화면" : "Workspace management screen"}
+          className="w-full h-auto"
+        />
+      </div>
+
+      {/* Description */}
+      <div className="space-y-2 text-muted-foreground leading-relaxed">
+        <p>
           {isKorean
-            ? "워크스페이스 관리 기능에 대한 자세한 가이드를 준비하고 있습니다."
-            : "We're preparing detailed guides for workspace management features."}
+            ? "워크스페이스를 생성한 뒤 멤버를 초대하면, 팀 또는 회사 단위로 전용 작업 공간을 구성할 수 있습니다."
+            : "After creating a workspace and inviting members, you can set up dedicated work areas for your team or company."}
+        </p>
+        <p>
+          {isKorean
+            ? "권한 관리, 협업, 크레딧 분배 등 조직 단위 운영이 가능합니다."
+            : "You can manage permissions, collaborate, and distribute credits at the organizational level."}
         </p>
       </div>
 
-      <div className="flex flex-col items-center justify-center py-16 px-6 border border-dashed border-purple-300 dark:border-purple-700 rounded-2xl bg-gradient-to-br from-purple-50/50 to-violet-50/50 dark:from-purple-950/20 dark:to-violet-950/20">
-        <img 
-          src={"https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E1%84%8B%E1%85%A1%E1%87%81%20%E1%84%87%E1%85%A9%E1%86%A8%E1%84%89%E1%85%A1%E1%84%87%E1%85%A9%E1%86%AB-4pOcLYtF41nFkgZd4ygPXl4vI4meRj.png"}
-          alt="Coming soon"
-          className="w-32 h-32 mb-6 object-contain"
-        />
-        <h3 className="text-2xl font-bold text-purple-600 dark:text-purple-400 mb-2">
-          {isKorean ? "준비 중입니다" : "Coming Soon"}
-        </h3>
-        <p className="text-base text-muted-foreground text-center max-w-md">
-          {isKorean 
-            ? "워크스페이스 관리 기능에 대한 자세한 가이드는 곧 제공될 예정입니다." 
-            : "Detailed guides for workspace management will be available soon."}
+      {/* Contact Section */}
+      <div className="w-full p-5 rounded-xl bg-muted/50 border border-border flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p className="text-base font-medium text-foreground">
+          {isKorean
+            ? "팀 또는 회사를 위한 워크스페이스가 필요하신가요?"
+            : "Need a workspace for your team or company?"}
         </p>
+        <a
+          href="https://tally.so/r/A7r82D"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#4FA8D8] text-white text-sm font-medium hover:bg-[#3D8BB8] transition-colors whitespace-nowrap"
+        >
+          {isKorean ? "문의하기" : "Contact Us"}
+        </a>
       </div>
     </div>
   ),
