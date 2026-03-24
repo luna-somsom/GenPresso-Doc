@@ -175,7 +175,7 @@ export const getNodeContent = (isKorean: boolean): { title: string; content: JSX
             muted
             playsInline
           >
-            <source src="/images/create-node.webm" type="video/webm" />
+            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_EbXLbvZ6NkX0ExWxigtClDxiszP8/u2OHzsMhs1CrLrYQiSYcLK/public/images/create-node.webm" type="video/webm" />
           </video>
         </div>
       </div>
